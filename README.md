@@ -13,8 +13,6 @@ Ce projet utilise des modèles d'apprentissage profond (LSTM) pour prédire le p
 
 ## Structure du projet
 
-Voici la structure des fichiers du projet :
-
 Voici la structure des fichiers du projet :<br>
 
 bitcoin-price-prediction/<br>
