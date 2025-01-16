@@ -1,0 +1,9 @@
+Flask
+requests
+yfinance
+numpy
+pandas
+tensorflow
+matplotlib
+plotly
+scikit-learn
