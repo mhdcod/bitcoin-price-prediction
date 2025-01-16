@@ -1,0 +1,51 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    color: #2a9d8f;
+}
+
+h2, h3 {
+    color: #264653;
+}
+
+/* Plots and Content Section */
+div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #e9c46a;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Buttons and Links */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #264653;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #2a9d8f;
+}
