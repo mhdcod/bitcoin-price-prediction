@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bitcoin Price Prediction App</h1>
+        <img src="{{ url_for('static', filename='bitcoin_logo.png') }}" alt="Bitcoin Logo" class="bitcoin-image">
+        <form method="POST" action="{{ url_for('index') }}">
+            <label for="stock">Stock Symbol:</label>
+            <input type="text" id="stock" name="stock" placeholder="e.g., BTC-USD" value="BTC-USD" required>
+
+
+            <label for="no_of_days">Number of Days to Predict:</label><br>
+            <input type="number" id="no_of_days" name="no_of_days" min="1" max="70" value="10"><br><br>
+
+            <button type="submit" class="submit-button">Predict Prices</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Bitcoin Price Prediction Results</title>
+</head>
+<body>
+    <h1>Bitcoin Price Prediction Results</h1>
+    <!-- <p><strong>Stock:</strong> {{ stock }}</p> -->
+
+    <!-- Future Predictions Plot -->
+    <h2>Future Predictions for Next {{ future_predictions|length }} Days</h2>
+    <h2>Today's Price: ${{ btc_price }}</h2>
+
+    <p><strong>Hover over the points on the plot to see the predicted price, or refer to the array below for exact values.</strong></p>
+    <div>{{ future_plot|safe }}</div>
+
+    <!-- Future Predictions Table -->
+    <h3>Future Predictions:</h3>
+    <ul>
+        {% for prediction in future_predictions %}
+            <li>Day {{ loop.index }}: {{ prediction }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Back to Home</a>
+</body>
+</html>
+
