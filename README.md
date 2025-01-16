@@ -14,5 +14,14 @@ Ce projet utilise des modèles d'apprentissage profond (LSTM) pour prédire le p
 ## Structure du projet
 
 Voici la structure des fichiers du projet :
-bitcoin-price-prediction/
-bitcoin-price-prediction/ │ ├── app.py # Fichier principal de l'application Flask ├── live_btc.py # Script pour récupérer le prix actuel du Bitcoin ├── model5.keras # Modèle LSTM pré-entraîné ├── requirements.txt # Liste des dépendances Python ├── templates/ # Dossier contenant les templates HTML │ ├── index.html # Page d'accueil │ └── result.html # Page des résultats └── static/ # Dossier pour les fichiers CSS et autres ressources statiques └── style.css # Styles CSS pour l'interface
+
+bitcoin-price-prediction/ 
+│ 
+├── app.py # Fichier principal de l'application Flask 
+├── live_btc.py # Script pour récupérer le prix actuel du Bitcoin 
+├── model5.keras # Modèle LSTM pré-entraîné ├── requirements.txt # Liste des dépendances Python 
+├── templates/ # Dossier contenant les templates HTML 
+│ ├── index.html # Page d'accueil 
+│ └── result.html # Page des résultats 
+└── static/ # Dossier pour les fichiers CSS et autres ressources statiques
+└── style.css # Styles CSS pour l'interface
