@@ -1,14 +1,14 @@
-import matplotlib
-matplotlib.use('Agg')  # Non-interactive backend for Matplotlib
+#import matplotlib
+#matplotlib.use('Agg')  # Non-interactive backend for Matplotlib
 import plotly.graph_objects as go
 from flask import Flask, render_template, request, redirect, url_for
-import pandas as pd
+#import pandas as pd
 import numpy as np
 import yfinance as yf
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
-import io
-import base64
+#import io
+#import base64
 from datetime import datetime
 import requests
 
@@ -76,10 +76,10 @@ def predict():
     inv_y_test = scaler.inverse_transform(y_data)
 
     # Prepare Data for Plotting
-    plotting_data = pd.DataFrame({
-        'Original Test Data': inv_y_test.flatten(),
-        'Predicted Test Data': inv_predictions.flatten()
-    }, index=x_test.index[100:])
+    #plotting_data = pd.DataFrame({
+    #    'Original Test Data': inv_y_test.flatten(),
+    #    'Predicted Test Data': inv_predictions.flatten()
+    #}, index=x_test.index[100:])
 
     # Plot 3: Future Predictions using Plotly
     last_100 = btc_data[['Close']].tail(100)
