@@ -1,0 +1,11 @@
+*.log
+*.csv
+*.json
+*.pkl
+tests/
+__pycache__/
+*.pyc
+.git/
+.env
+static/uploads/  # Example for uploaded files
+node_modules/  # If present
