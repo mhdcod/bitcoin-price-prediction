@@ -1,14 +1,10 @@
-#import matplotlib
-#matplotlib.use('Agg')  # Non-interactive backend for Matplotlib
 import plotly.graph_objects as go
 from flask import Flask, render_template, request, redirect, url_for
-#import pandas as pd
+import pandas as pd
 import numpy as np
 import yfinance as yf
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
-#import io
-#import base64
 from datetime import datetime
 import requests
 
@@ -23,7 +19,7 @@ def plot_to_html(fig):
     fig_html = fig.to_html(full_html=False)
     return fig_html
 
-# Function to fetch live BTC price
+# Fetch live BTC price
 def fetch_live_btc_price():
     url = "https://api.coingecko.com/api/v3/simple/price"
     params = {
@@ -74,12 +70,6 @@ def predict():
     predictions = model.predict(x_data)
     inv_predictions = scaler.inverse_transform(predictions)
     inv_y_test = scaler.inverse_transform(y_data)
-
-    # Prepare Data for Plotting
-    #plotting_data = pd.DataFrame({
-    #    'Original Test Data': inv_y_test.flatten(),
-    #    'Predicted Test Data': inv_predictions.flatten()
-    #}, index=x_test.index[100:])
 
     # Plot 3: Future Predictions using Plotly
     last_100 = btc_data[['Close']].tail(100)
