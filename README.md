@@ -7,7 +7,7 @@ L'application web est développée avec **Flask** et permet aux utilisateurs de 
 
 ## **🚀 Fonctionnalités**  
 
-✅ **Prédictions des prix futurs** : Utilise un modèle **LSTM** pré-entraîné pour prédire les prix du Bitcoin pour les **10 à 70 jours suivants**.  
+✅ **Prédictions des prix futurs** : Utilise un modèle **LSTM** pré-entraîné pour prédire les prix du Bitcoin pour les **1 à 70 jours suivants**.  
 ✅ **Prix en temps réel** : Récupère le prix actuel du Bitcoin via l'**API CoinGecko**.  
 ✅ **Interface utilisateur interactive** : Les utilisateurs peuvent entrer un **symbole boursier** (par défaut `BTC-USD`) et définir la durée des prédictions souhaitées.  
 ✅ **Visualisation des données** : Les prédictions sont affichées sous forme de **graphiques interactifs** avec **Plotly**.  
@@ -52,7 +52,6 @@ pip install -r requirements.txt
 - 🌐 **requests** → Pour récupérer les prix en temps réel.  
 - 📈 **Plotly** → Pour la visualisation des prédictions.  
 
----
 
 ## **5️⃣ `btc_data.csv`**  
 Ce fichier contient les **données historiques du prix du Bitcoin** utilisées pour entraîner le modèle.  
